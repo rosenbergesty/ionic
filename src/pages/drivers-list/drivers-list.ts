@@ -19,6 +19,7 @@ export class DriversListPage {
     var driverObservable = this.drivers.query();
     var subscription = driverObservable.subscribe(
       value => this.currentItems = value
+      // value => console.log(value)
      );
   }
 
